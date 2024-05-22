@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styleorder.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="freshmart.html" class="logo">
+                <img src="images/unnamed (1).png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="freshmart.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsdai.html">Dairy Products</option>
+                        <option value="productscos.html">Cosmetic items</option>
+                        <option value="productsveg.html">Vegitables</option>
+                    </select>
+                </li>
+                <li><a href="about-index.html">About</a></li>
+                <li><a href="loyalty.html">Loyalty</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            <a href="orderpage.html"><img src="images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+<!----Oreder section-->
+    <main>
+        <section class="order-form">
+            <h2>Order Form</h2>
+            <form action="submit_order.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="number">Phone Number</label>
+                <input type="text" id="Phone Number" name="Phone Number" required>
+
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="Milk">Milk</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="Yogurt">Yogurt</option>
+                    <option value="Butter">Butter</option>
+                    <option value="Cream">Cream</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                    <option value="Carrots">Carrots</option>
+                    <option value="Lettuce">Lettuce</option>
+                    <option value="Broccoli">Broccoli</option>
+                    <option value="Peppers">Peppers</option>
+                    <option value="Spinach">Spinach</option>
+                    <option value="Cleanser">Cleanser</option>
+                    <option value="Moisturizer">Moisturizer</option>
+                    <option value="Serum">Serum</option>
+                    <option value="Sunscreen">Sunscreen</option>
+                    <option value="Face Mask">Face Mask</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="cash on delivary">Cash on delivary</option>
+                </select>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="month" id="expiration-date" name="expiration-date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Add to Cart</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <section class="container">
+      <section class="grid">
+          <article>
+              <h3>Download Our App</h3>
+              <p>Download app for Android and iOS mobile phone.</p>
+              <figure class="app-logo">
+                  <img src="images/play-store.png" alt="Play Store">
+                  <img src="images/app-store.png" alt="App Store">
+              </figure>
+          </article>
+          <article>
+              <img src="images/unnamed (1).png" alt="Logo">
+              <p>Way to the home</p>
+          </article>
+          <article>
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </article>
+          <article>
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Youtube</a></li>
+              </ul>
+          </article>
+      </section>
+  </section>
+  <hr>
+  <p class="copyright">&copy; Copyright 2024 Fresh Details</p>
+</footer>
+</body>
+</html>
